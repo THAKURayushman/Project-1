@@ -1,8 +1,13 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: neu;
+    
 }
 html, body{
     height: 100%;
@@ -10,7 +15,7 @@ html, body{
 
 }
 #page1{
-    height: 100%;
+    min-height: 100%;               /*to cover all the content of page*/
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
@@ -36,8 +41,10 @@ nav{
     
     
 }
-.navButtons h4{
-    font-family: Neuehaasdisplay roman, sans-serif;
+.navButtons p{
+    background-color: ;
+    font-weight: 100;
+    font-family: neu;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +53,7 @@ nav{
     width: 90px;
     border: 1px solid rgb(191, 190, 190);
     border-radius:50px ;
-    font-weight: 500;
+    
     text-decoration: none;
     color: black;
     overflow: hidden;
@@ -57,7 +64,7 @@ a{
     z-index: 10;
     
 }
-h4::after{
+p::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -68,16 +75,62 @@ h4::after{
     border-radius: 50%;
     transition: all 0.3s ease-in ;
 }
-h4:hover a{
+p:hover a{
     color: white;
 }
 
-h4:hover::after{
+p:hover::after{
     bottom: 0;
     border-radius: 0;
     
 }
-
+main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+#leftContent{
+    font-family: neu;
+    font-weight: 800;
+    padding: 5vh;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+#bigContent{
+    text-align: right;
+    font-weight: bolder;
+    display: flex;
+    color: #0B0500;
+    font-family: neu;
+    height: 100%;
+    align-items: center;
+    padding: 5vh;
+    font-size: 10vh;
+    align-items: end;
+    line-height: 17vh;
+    
+}
+hr{
+    width: 95%;
+    margin-top: 2vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+#video1{
+    display: flex;
+    justify-content: center;
+}
+video{
+    width: 97%;
+    border-radius: 30px;
+    margin-top: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+    object-fit: cover;
+}
 
 
 
