@@ -42,7 +42,6 @@ nav{
     
 }
 .navButtons p{
-    background-color: ;
     font-weight: 100;
     font-family: neu;
     display: flex;
@@ -130,7 +129,77 @@ video{
     padding-left: 10px;
     padding-right: 10px;
     object-fit: cover;
+    z-index: 10;
 }
+#anime{
+    height: 36vw;
+    width: 46vw;
+    background-color: orangered;
+    position: absolute;
+    right: 0;
+    top: 70vh;
+    border-top-left-radius: 50%;
+    filter: blur(20px);
+
+}
+#heroShape1{
+    height: 100%;
+    width: 100%;
+    background-color: orangered;
+    filter: blur(20px);
+   border-top-left-radius: 50%;
+   position: absolute;
+   animation: anime3 3s linear infinite alternate;
+
+
+}
+#heroShape2{
+    height: 30vw;
+    width: 30vw;
+    background-color: orangered;
+    filter: blur(20px);
+   border-radius: 50%;
+   position: absolute;
+   animation: anime2 3s linear infinite alternate;
+
+}
+#heroShape3{
+    height: 30vw;
+    width: 30vw;
+    background-color: orangered;
+    filter: blur(20px);
+   border-radius: 50%;
+   position: absolute;
+   animation: anime1 3s linear infinite alternate ;
+
+}
+@keyframes anime1 {
+    from{
+        transform: translate(55%, -3%);
+    }
+    to{
+        transform: translate(0%, 10%);
+    }
+    
+}
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+@keyframes anime3 {
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+}
+
 
 
 
