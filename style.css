@@ -129,7 +129,7 @@ video{
     padding-left: 10px;
     padding-right: 10px;
     object-fit: cover;
-    z-index: 10;
+    position: relative;
 }
 #anime{
     height: 36vw;
@@ -140,20 +140,21 @@ video{
     top: 70vh;
     border-top-left-radius: 50%;
     filter: blur(20px);
-
+    
 }
 #heroShape1{
+    left: 0;
     height: 100%;
     width: 100%;
     background-color: orangered;
     filter: blur(20px);
    border-top-left-radius: 50%;
    position: absolute;
-   animation: anime3 3s linear infinite alternate;
 
 
 }
 #heroShape2{
+    left: 0;
     height: 30vw;
     width: 30vw;
     background-color: orangered;
@@ -164,21 +165,23 @@ video{
 
 }
 #heroShape3{
+    right: 0;
     height: 30vw;
     width: 30vw;
     background-color: orangered;
     filter: blur(20px);
    border-radius: 50%;
    position: absolute;
+
    animation: anime1 3s linear infinite alternate ;
 
 }
 @keyframes anime1 {
     from{
-        transform: translate(55%, -3%);
+        transform: translateY(0);
     }
     to{
-        transform: translate(0%, 10%);
+        transform: translateY(-15%);
     }
     
 }
@@ -191,13 +194,54 @@ video{
         transform: translate(-20%, 30%);
     }
 }
-@keyframes anime3 {
+
+#page2{
+    width: 100%;
+    background-color: #EFEAE3;
+    white-space: nowrap;
+    padding: 8vw 0;
+}
+#movingText{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#movingText::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation: anime4 10s linear infinite;
+}
+#movingText h1{
+    font-family: neu;
+    font-size: 9vw;
+    font-weight: 500;
+    display: inline-block;
+}
+#gola{
+    height: 70px;
+    width: 70px;
+    background-color: orangered;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+@keyframes anime4 {
     from{
-        transform: rotate(-10deg);
+        transform: translateX(0);
     }
     to{
-        transform: rotate(0);
+        transform: translateX(-100%);
     }
+}
+.page2Bottom{
+    height: 60vh;
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
