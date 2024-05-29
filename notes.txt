@@ -1,0 +1,2 @@
+--FOOTER SECTION--
+    In footer section page 5 is important and it should not have any colour thus making it transparent, so that footer is visible.
